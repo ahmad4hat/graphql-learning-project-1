@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { gql } from "apollo-boost";
 import { useQuery } from "@apollo/react-hooks";
 
-const getBooksQuery = gql(`
+export const getBooksQuery = gql(`
   {
     books {
       id
