@@ -44,8 +44,6 @@ const AddBook = props => {
   }
   const submitBook = event => {
     event.preventDefault();
-    console.log({ name, genre, authorId });
-    console.log("----------------");
     addBook({
       variables: {
         name,
@@ -54,7 +52,6 @@ const AddBook = props => {
       },
       refetchQueries: [{ query: getBooksQuery }]
     });
-    console.log(addBookData);
   };
   return (
     <form id="add-book" onSubmit={submitBook}>
