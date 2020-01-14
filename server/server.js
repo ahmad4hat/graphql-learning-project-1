@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 //mongoose connect
-mongoose.connect("mongodb://localhost:27017/graphqldb");
+mongoose.connect("mongodb://mogod:27017/graphqldb");
 mongoose.connection.once("open", () =>
   console.log("connected to the database")
 );
